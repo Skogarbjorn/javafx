@@ -1,0 +1,55 @@
+.mynd1 {
+    -fx-background-image:
+        url("./myndir/1.png");
+        -fx-background-size: cover;
+}
+
+.mynd2 {
+    -fx-background-image:
+        url("./myndir/2.png");
+        -fx-background-size: cover;
+}
+
+.mynd3 {
+    -fx-background-image:
+        url("./myndir/3.png");
+        -fx-background-size: cover;
+}
+
+.mynd4 {
+    -fx-background-image:
+        url("./myndir/4.png");
+        -fx-background-size: cover;
+}
+.mynd5 {
+    -fx-background-image:
+        url("./myndir/5.png");
+        -fx-background-size: cover;
+}
+
+.mynd6 {
+    -fx-background-image:
+        url("./myndir/6.png");
+        -fx-background-size: cover;
+}
+
+.mynd7 {
+    -fx-background-image:
+        url("./myndir/7.png");
+        -fx-background-size: cover;
+}
+.mynd8 {
+    -fx-background-image:
+        url("./myndir/8.png");
+        -fx-background-size: cover;
+}
+.mynd9 {
+    -fx-background-image:
+        url("./myndir/9.png");
+        -fx-background-size: cover;
+}
+
+
+
+
+

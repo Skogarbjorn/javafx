@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.example.goldrush.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.goldrush.GoldController">
+    <Leikbord fx:id="fxLeikbord" />
+<fx:include fx:id="menu" source="menu-view.fxml" />
+          <Label fx:id="timi" alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="30.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font></Label>
+    <Label fx:id="points" contentDisplay="RIGHT" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.leftAnchor="435.0" AnchorPane.topAnchor="30.0">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font></Label>
+</AnchorPane>

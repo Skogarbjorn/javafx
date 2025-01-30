@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.audioplayer.ListiController">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="300.0">
+            <children>
+                <ListView fx:id="listi" prefHeight="200.0" prefWidth="214.0" />
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                    <children>
+                        <ImageView fx:id="selectedImage" fitHeight="60.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <ProgressBar fx:id="progressBar" maxHeight="1.7976931348623157E308" prefWidth="200.0" progress="0.0" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#playPause" prefHeight="52.0" prefWidth="30.0">
+                            <graphic>
+                                <ImageView fx:id="playPauseImage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                            </graphic>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                </VBox>
+                <Button mnemonicParsing="false" onAction="#returnHandler" text="Til baka" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

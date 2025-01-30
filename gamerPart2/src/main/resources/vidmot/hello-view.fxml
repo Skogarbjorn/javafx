@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="vidmot.HelloController" stylesheets="@gamer.css">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <StackPane>
+        <AnchorPane>
+            <ImageView fx:id="myImageView" id="imageView" AnchorPane.topAnchor="220" AnchorPane.leftAnchor="180">
+                <image>
+                    <Image url="@beato.png" />
+                </image>
+            </ImageView>
+        </AnchorPane>
+        <VBox alignment="CENTER" spacing="5.0">
+            <Button id="superGamer" text="H-Halló?" onAction="#onHelloButtonClick"/>
+            <Label fx:id="welcomeText"/>
+        </VBox>
+    </StackPane>
+
+
+</VBox>
+

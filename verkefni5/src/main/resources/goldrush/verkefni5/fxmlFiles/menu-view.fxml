@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="goldrush.verkefni5.MenuController" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="New Game" onAction="#handleNewGame"/>
+            <MenuItem text="Quit" onAction="#handleQuit"/>
+        </Menu>
+        <Menu text="Help">
+            <MenuItem text="How to Play" onAction="#handleShowHelp"/>
+        </Menu>
+        <Menu text="Difficulty">
+            <items>
+                <RadioMenuItem fx:id="35" text="Easy" selected="true" onAction="#handleDifficultyChange" toggleGroup="$difficultyToggleGroup">
+                <toggleGroup>
+                    <ToggleGroup fx:id="difficultyToggleGroup"/>
+                </toggleGroup>
+                </RadioMenuItem>
+                <RadioMenuItem fx:id="30" text="Medium" onAction="#handleDifficultyChange" toggleGroup="$difficultyToggleGroup"/>
+                <RadioMenuItem fx:id="20" text="Hard" onAction="#handleDifficultyChange" toggleGroup="$difficultyToggleGroup"/>
+            </items>
+        </Menu>
+    </MenuBar>
+
+
+</AnchorPane>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="441.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calc.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label fx:id="ghostScreen" alignment="BOTTOM_RIGHT" prefHeight="41.0" prefWidth="334.0" style="-fx-background-color: #DDDDDD;" textFill="#565656">
+      <font>
+         <Font size="16.0" />
+      </font>
+      <padding>
+         <Insets left="8.0" right="8.0" top="8.0" />
+      </padding>
+   </Label>
+
+    <Label fx:id="screen" alignment="BOTTOM_RIGHT" prefHeight="39.0" prefWidth="334.0" style="-fx-background-color: #DDDDDD;" textAlignment="RIGHT" textFill="#464646">
+      <font>
+         <Font size="25.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="20.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="8.0" right="8.0" />
+      </padding></Label>
+   <VBox prefHeight="200.0" prefWidth="100.0">
+      <children>
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="power" mnemonicParsing="false" onAction="#powerButtonClick" prefHeight="100.0" prefWidth="200.0" text="a^x">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="divisioin" mnemonicParsing="false" onAction="#divideButtonClick" prefHeight="50.0" prefWidth="200.0" text="/">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+            </children>
+         </HBox>
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="one" mnemonicParsing="false" onAction="#oneButtonClick" prefHeight="200.0" prefWidth="150.0" text="1">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="two" mnemonicParsing="false" onAction="#twoButtonClick" prefHeight="200.0" prefWidth="150.0" text="2">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="three" mnemonicParsing="false" onAction="#threeButtonClick" prefHeight="200.0" prefWidth="150.0" text="3">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="multiply" mnemonicParsing="false" onAction="#multiplyButtonClick" prefHeight="100.0" prefWidth="150.0" text="*">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+            </children>
+         </HBox>
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="four" mnemonicParsing="false" onAction="#fourButtonClick" prefHeight="200.0" prefWidth="150.0" text="4">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="five" mnemonicParsing="false" onAction="#fiveButtonClick" prefHeight="200.0" prefWidth="150.0" text="5">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="six" mnemonicParsing="false" onAction="#sixButtonClick" prefHeight="200.0" prefWidth="150.0" text="6">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="minus" mnemonicParsing="false" onAction="#minusButtonClick" prefHeight="51.0" prefWidth="150.0" text="-">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+            </children>
+         </HBox>
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="seven" mnemonicParsing="false" onAction="#sevenButtonClick" prefHeight="200.0" prefWidth="150.0" text="7">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="eight" mnemonicParsing="false" onAction="#eightButtonClick" prefHeight="200.0" prefWidth="150.0" text="8">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="nine" mnemonicParsing="false" onAction="#nineButtonClick" prefHeight="200.0" prefWidth="150.0" text="9">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="plus" mnemonicParsing="false" onAction="#plusButtonClick" prefHeight="52.0" prefWidth="150.0" text="+">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+            </children>
+         </HBox>
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="clear" mnemonicParsing="false" onAction="#clearButtonClick" prefHeight="200.0" prefWidth="150.0" text="Clear">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="zero" mnemonicParsing="false" onAction="#zeroButtonClick" prefHeight="200.0" prefWidth="150.0" text="0">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="dot" mnemonicParsing="false" onAction="#dotButtonClick" prefHeight="150.0" prefWidth="150.0" text=".">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+               <Button fx:id="enter" mnemonicParsing="false" onAction="#enterButtonClick" prefHeight="200.0" prefWidth="150.0" text="↵">
+                  <font>
+                     <Font size="20.0" />
+                  </font></Button>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+</VBox>

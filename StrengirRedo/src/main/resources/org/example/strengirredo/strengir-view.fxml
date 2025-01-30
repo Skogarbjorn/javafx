@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefWidth="500" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.strengirredo.StrengirController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox prefHeight="50.0" spacing="20.0">
+        <children>
+         <HBox prefHeight="100.0" prefWidth="350.0" spacing="20.0">
+            <children>
+                  <TextField fx:id="searchField" maxHeight="1.7976931348623157E308" prefWidth="200.0" promptText="Skrifaðu leitarorð hér" />
+                  <Label fx:id="leitaLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="100.0" style="-fx-border-color: black" text="0" />
+            </children>
+         </HBox>
+            <Button maxHeight="1.7976931348623157E308" onAction="#onLeita" prefWidth="150.0" text="Leita" />
+        </children>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="460.0" spacing="20.0">
+        <children>
+            <TextArea fx:id="inputArea" prefWidth="350.0" promptText="Skrifaðu inn texta hér" />
+            <Button fx:id="vistaButton" onAction="#onVista" prefHeight="200" prefWidth="150" text="Vista" />
+        </children>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="460.0" spacing="20.0">
+        <children>
+            <Label fx:id="teljaLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="350.0" style="-fx-border-color: black" text="0" />
+            <Button maxHeight="1.7976931348623157E308" onAction="#onTelja" prefWidth="150.0" text="Telja" />
+        </children>
+    </HBox>
+</VBox>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="540.0" prefWidth="320.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.audioplayerredo.AlbumController">
+   <ImageView fx:id="fxAlbumCover" fitHeight="75.0" fitWidth="237.0" pickOnBounds="true" preserveRatio="true" />
+    <ListView fx:id="fxList" prefHeight="221.0" prefWidth="329.0" />
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+      <children>
+          <ImageView fx:id="fxImage" fitHeight="101.0" fitWidth="159.0" nodeOrientation="INHERIT" preserveRatio="true" />
+          <StackPane prefHeight="101.0" prefWidth="120.0">
+              <Button onAction="#playPauseHandler" prefHeight="40.0" prefWidth="40.0">
+                  <graphic>
+                      <ImageView fx:id="fxPlayPauseImage" fitHeight="20.0" fitWidth="20.0">
+                          <image>
+                              <Image url="@../../../vidmot/media/play.png" />
+                          </image>
+                      </ImageView>
+                  </graphic>
+              </Button>
+          </StackPane>
+      </children>
+   </HBox>
+    <ProgressBar fx:id="fxProgress" prefHeight="12.0" prefWidth="351.0" progress="0.0" />
+    <Button text="Til baka" onAction="#onReturn"/>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

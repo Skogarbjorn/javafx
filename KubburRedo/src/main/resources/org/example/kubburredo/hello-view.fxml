@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.kubburredo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <children>
+        <Label fx:id="fxStatus" text="Leikur í gangi" />
+        <HBox>
+            <children>
+                <Label text="Stigin eru: " />
+                <Label fx:id="fxPoints" text="0" />
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Label text="Veldu tölu" />
+                <TextField fx:id="fxInput" />
+            </children>
+        </HBox>
+        <GridPane fx:id="fxGrid" disable="true">
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         </rowConstraints>
+         <columnConstraints>
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <children>
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children></GridPane>
+    </children>
+</VBox>

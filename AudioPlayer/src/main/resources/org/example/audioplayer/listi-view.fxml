@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="412.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.vidmot.ListiController">
+   <children>
+      <VBox prefHeight="409.0" prefWidth="218.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="listImage" fitHeight="82.0" fitWidth="220.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <ListView fx:id="list" prefHeight="200.0" prefWidth="214.0" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+               <children>
+                  <ImageView fx:id="selectedImage" fitHeight="60.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></ImageView>
+                  <ProgressBar fx:id="selectedProgress" maxHeight="1.7976931348623157E308" prefWidth="200.0" progress="0.0" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#onPlayPause" prefHeight="52.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fx:id="pauseImage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#onReturn" text="Return" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

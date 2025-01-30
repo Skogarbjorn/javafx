@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="229.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rafmagn.RafmagnController">
+    <TextField fx:id="fxEknir" />
+    <TextField fx:id="fxRafmagn" />
+    <Label fx:id="fxEydsla" prefWidth="150" style="-fx-border-color: black" />
+    <TextField fx:id="fxVerd" />
+    <Button onAction="#onReiknaKostnad" text="reikna" />
+    <Label fx:id="fxKostnadur" prefWidth="150" style="-fx-border-color: black" />
+
+</HBox>

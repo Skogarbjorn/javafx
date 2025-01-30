@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+
+
+<ImageView fx:id="goldenCoin" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea">
+   <image>
+      <Image url="@../Assets/images/Gold_Coin.gif" />
+   </image>
+</ImageView>

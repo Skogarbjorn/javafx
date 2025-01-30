@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.goldrushredo.MenuController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onQuit" text="Close" />
+              <MenuItem mnemonicParsing="false" onAction="#onStart" text="New Game" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Difficulty">
+            <items>
+              <RadioMenuItem fx:id="50" mnemonicParsing="false" text="Easy" onAction="#onDiff">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="difficulty"/>
+                     </toggleGroup></RadioMenuItem>
+              <RadioMenuItem fx:id="40" mnemonicParsing="false" text="Medium" toggleGroup="$difficulty" onAction="#onDiff"/>
+              <RadioMenuItem fx:id="20" mnemonicParsing="false" text="Hard" toggleGroup="$difficulty" onAction="#onDiff"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

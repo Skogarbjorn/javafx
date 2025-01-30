@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.canvastesting.HelloController">
+   <Canvas fx:id="fxCanvas" height="1080.0" width="1720.0" />
+    <GridPane>
+        <Button onAction="#onClear" prefWidth="100" text="Clear" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <ColorPicker fx:id="fxColorPicker" GridPane.columnIndex="0" GridPane.rowIndex="0">
+         <value>
+            <Color />
+         </value></ColorPicker>
+      <columnConstraints>
+         <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      </rowConstraints>
+    </GridPane>
+</HBox>

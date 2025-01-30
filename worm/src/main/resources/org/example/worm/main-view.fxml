@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.example.worm.Leikbord?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.worm.AudioPlayer"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Leikbord/>
+    <fx:include source="stats.fxml"/>
+    <HBox spacing="10"> <!-- spacing is optional, adjusts the space between children -->
+        <children>
+            <fx:include source="menu-view.fxml"/>
+
+        </children>
+    </HBox>
+
+</AnchorPane>

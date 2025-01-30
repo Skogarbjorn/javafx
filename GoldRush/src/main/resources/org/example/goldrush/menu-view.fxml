@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.goldrush.MenuController">
+    <children>
+        <MenuBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onStart" text="New Game" />
+                        <MenuItem mnemonicParsing="false" onAction="#onStop" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <RadioMenuItem fx:id="60" mnemonicParsing="false" onAction="#onDifficulty" text="Easy" toggleGroup="$Difficulty">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="Difficulty" />
+                            </toggleGroup></RadioMenuItem>
+                        <RadioMenuItem fx:id="40" mnemonicParsing="false" onAction="#onDifficulty" text="Medium" toggleGroup="$Difficulty" />
+                        <RadioMenuItem fx:id="20" mnemonicParsing="false" onAction="#onDifficulty" text="Hard" toggleGroup="$Difficulty" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onHelp" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

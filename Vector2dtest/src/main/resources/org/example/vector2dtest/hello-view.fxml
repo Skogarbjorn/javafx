@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="org.example.vector2dtest.HelloController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Rectangle fx:id="gamer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

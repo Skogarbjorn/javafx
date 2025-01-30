@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import org.example.goldrushredo.Player?>
+
+<fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: azure">
+
+    <Player fx:id="fxPlayer" layoutX="300" layoutY="300"/>
+
+    <Pane fx:id="fxGoldPane" prefHeight="600" prefWidth="600">
+    </Pane>
+</fx:root>

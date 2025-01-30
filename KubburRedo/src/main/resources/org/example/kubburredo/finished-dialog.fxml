@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <header>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="146.0" stroke="BLACK" strokeType="INSIDE" width="486.0" />
+         </children></AnchorPane>
+  </header>
+  <content>
+    <VBox minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="480.0">
+         <children>
+            <Label text="Gamer?" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="fxGamer" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children></VBox>
+  </content>
+  <expandableContent>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+         <children>
+         </children></AnchorPane>
+  </expandableContent>
+    <ButtonType fx:id="fxOk" buttonData="OK_DONE" text="gamer"/>
+    <ButtonType fx:id="fxNo" buttonData="CANCEL_CLOSE" text="sad"/>
+</DialogPane>

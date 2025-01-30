@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox fx:id="vbox" alignment="BOTTOM_CENTER" prefHeight="660.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bouncingball.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Circle fx:id="ball" fill="DODGERBLUE" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="floor" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="29.0" stroke="BLACK" strokeType="INSIDE" width="325.0" />
+   </children>
+</VBox>

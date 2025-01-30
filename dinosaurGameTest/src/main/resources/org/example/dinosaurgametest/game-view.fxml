@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.dinosaurgametest.GameController"
+            prefHeight="600.0" prefWidth="1000.0">
+
+    <Rectangle fill="black" width="1000" height="250" layoutY="350" fx:id="fxRectangle"/>
+
+</AnchorPane>

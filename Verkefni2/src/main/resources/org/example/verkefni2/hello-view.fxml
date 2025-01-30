@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="291.0" prefWidth="503.0" spacing="4.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.verkefni2.StrengirController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="100.0" prefWidth="200.0" spacing="4.0">
+      <children>
+         <TextField fx:id="searchString" alignment="TOP_LEFT" prefHeight="91.0" prefWidth="235.0" promptText="Sláðu inn leitarorð" />
+
+          <Label fx:id="numberOfInstances" alignment="CENTER" prefHeight="92.0" prefWidth="125.0" style="-fx-border-radius: 3px; -fx-border-color: gray;" text="-">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets></Label>
+          <Button onAction="#onLeitaButtonClick" prefHeight="94.0" prefWidth="130.0" text="Leita" />
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </HBox>
+   <HBox prefHeight="197.0" prefWidth="463.0" spacing="4.0">
+      <children>
+         <TextArea fx:id="inputText" prefHeight="113.0" prefWidth="342.4" promptText="Sláðu inn texta" />
+         <Button mnemonicParsing="false" onAction="#onVistaButtonClick" prefHeight="179.0" prefWidth="122.0" text="Vista" />
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="463.0" spacing="4.0">
+      <children>
+         <Label fx:id="wordCount" alignment="CENTER" prefHeight="88.0" prefWidth="342.0" style="-fx-border-color: gray; -fx-border-radius: 3px;" text="0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets></Label>
+         <Button mnemonicParsing="false" onAction="#onCountButtonClick" prefHeight="89.0" prefWidth="122.0" text="Telja orð" />
+      </children>
+   </HBox>
+</VBox>

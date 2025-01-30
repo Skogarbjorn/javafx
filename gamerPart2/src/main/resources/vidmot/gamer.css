@@ -1,0 +1,9 @@
+Button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 17;
+}
+
+#imageView {
+    -fx-opacity: 0;
+}

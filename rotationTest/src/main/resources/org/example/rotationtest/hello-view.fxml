@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+
+<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="org.example.rotationtest.HelloController" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <Button opacity="0.0" onKeyPressed="#onMove"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="70.0" stroke="BLACK" strokeType="INSIDE" width="100.0" layoutX="100" layoutY="100" rotate="0" fx:id="player"/>
+   </children>
+</AnchorPane>

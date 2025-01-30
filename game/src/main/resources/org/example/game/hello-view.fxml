@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="505.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.game.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <StackPane alignment="BOTTOM_CENTER" prefHeight="524.0" prefWidth="760.0">
+      <children>
+         <Pane fx:id="ground" maxHeight="150.0" prefHeight="150.0" prefWidth="760.0" style="-fx-background-color: black;" visible="false" />
+         <VBox alignment="CENTER" prefHeight="225.0" prefWidth="760.0">
+            <children>
+
+                <Label fx:id="welcomeText" text="gamer" />
+                <Button fx:id="play" onAction="#onPlayButtonClick" text="play" />
+            </children>
+         </VBox>
+      </children>
+   </StackPane>
+</VBox>
